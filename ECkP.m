@@ -1,4 +1,4 @@
-function [ P ] = kP(k, P, A)
+function [ P ] = ECkP(k, P, A)
 % Elliptic curve addition
 %   kP = P + P + ... + P (k times)
 

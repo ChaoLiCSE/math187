@@ -1,4 +1,4 @@
-function [ pt ] = PQ( P, Q )
+function [ pt ] = ECPQ( P, Q )
 % Elliptic Curve addition P+Q
     P
     Q
