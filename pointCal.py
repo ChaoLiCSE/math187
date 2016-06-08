@@ -173,5 +173,28 @@ def multwithprime(time, point, A, prime):
     print(out) 
     return [x,y]
 
+def mult(time, point, A):
+    print("start to mult: ")
+    print(time)
+
+    if(time < 2):
+        return point
+
+    if(time == 2):
+        result = findPoint4(point, point,A)
+
+        #print (result[0].numerator % prime)
+        #print("inv: ")
+        #print(result[0].denominator)
+
+        return result
+
+    result = findPoint4(point, mult( time-1, point, A), A)
+    
+    out = "the outcome of " + str(time) +" * "+ str(point) +  " is: " +  str(result[0]) + " , "+str(result[1])  
+    print(out) 
+    return result
 #print(findPoint4([1,2], [7,16],-15))
 #print(findPoint4([0,0],[0,0],1))
+########################TEST CODES############################
+mult(3,[1,2],-15)
