@@ -1,4 +1,4 @@
-function [ v1 ] = LatRed( v1, v2 )
+function [ v1 ] = LatReduce( v1, v2 )
 % Lattice Reduction
 % 1. If ||v|| > ||v2||, swap v1 and v2 so that ||v1|| <= ||v2||.
 % 2. Let t be the closest integer to (v1 • v2)/(v1 • v1).
